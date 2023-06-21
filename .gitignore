@@ -128,7 +128,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# env
-.env
+#application.yaml
+/src/main/resources/application.yaml
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,java,macos,redis
