@@ -3,6 +3,7 @@ package com.goodfood.goodfood.global.entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
 @ToString
@@ -11,7 +12,7 @@ import lombok.ToString;
 public class Restaurant {
 
     @Id
-    Long num;
+    Integer num;
 
     private String open_service_name;
     private String open_service_id;
@@ -38,7 +39,10 @@ public class Restaurant {
     private String classification_of_data_renewal;
     private String data_update_date;
     private String clear_business_type;
+
+    @Setter
     private String coordinate_information_x;
+    @Setter
     private String coordinate_information_y;
     private String name_of_hygiene_business;
     private String number_of_male_employees;
